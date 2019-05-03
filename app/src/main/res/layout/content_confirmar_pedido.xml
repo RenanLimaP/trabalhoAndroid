@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ConfirmarPedidoActivity"
+    tools:showIn="@layout/activity_confirmar_pedido">
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtMetodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:text="Método de Pagamento"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="30dp" />
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="20dp">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="Pagamento com dinheiro" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Pagamento com cartão" />
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="415dp"
+                android:layout_height="186dp"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/itensPedido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Itens do Pedido"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/skol" />
+
+                <TextView
+                    android:id="@+id/pedido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="155dp"
+                    android:layout_marginTop="60dp"
+                    android:text="Skol"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/valor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="155dp"
+                    android:layout_marginTop="90dp"
+                    android:text="R$ 3.00"
+                    android:textColor="@color/googleRed"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/Qtd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="155dp"
+                    android:layout_marginTop="110dp"
+                    android:text="Qtd:1"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="240dp"
+                    android:layout_marginTop="155dp"
+                    android:text="R$3.00"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/totalValor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="155dp"
+                    android:text="Total"
+                    android:textSize="25dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="415dp"
+                android:layout_height="118dp"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/endereco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Endereço de Entrega"
+                    android:textSize="25dp" />
+
+
+                <TextView
+                    android:id="@+id/ruaCli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="45dp"
+                    android:text="Rua via, 25"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/numeroApt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="65dp"
+                    android:text="Apto 3 Copacabana"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/cidadeEstado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="85dp"
+                    android:text="Quixadá, Ceará"
+                    android:textSize="20dp" />
+
+
+            </android.support.v7.widget.CardView>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/finalizarPedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="540dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="sans-serif-medium"
+            android:text="Finalizar Pedido"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/Voltar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="600dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="sans-serif-medium"
+            android:text="Voltar"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

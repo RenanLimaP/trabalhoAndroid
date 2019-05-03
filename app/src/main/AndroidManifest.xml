@@ -9,6 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".CarrinhoActivity"
+            android:label="@string/title_activity_carrinho"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".DetalhesProdutoActivity"
+            android:label="@string/title_activity_detalhes_pedido"></activity>
+        <activity
+            android:name=".SignupActivity"
+            android:label="@string/title_activity_signup" />
+        <activity
+            android:name=".ConfirmarPedidoActivity"
+            android:label="@string/title_activity_confirmar_pedido" />
+        <activity
+            android:name=".ProdutosActivity"
+            android:label="@string/title_activity_produtos" />
+        <activity
+            android:name=".HomeActiviry"
+            android:label="@string/title_activity_home_activiry"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
